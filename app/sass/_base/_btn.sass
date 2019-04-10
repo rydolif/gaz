@@ -1,0 +1,40 @@
+.btn
+	position: relative
+	display: inline-block
+	height: 64px
+	border: 1px solid #000000
+	outline: none
+	padding: 0 30px
+	border-radius: 10px
+	background-color: #fb210b
+	text-align: center
+	line-height: 64px
+	letter-spacing: .2px
+	box-shadow: 4px 0 7px 1px #abaaa9
+	font-size: 24px !important
+	color: #fff !important
+	font-weight: 400 !important
+
+	&:hover,
+	&:focus
+		outline: none
+		border: 1px solid #000000
+		text-decoration: none
+		cursor: pointer
+		transition: all .3s
+		box-shadow: 0 5px 10px rgba($text, .4)
+		color: #fff
+
+	&::before
+		display: none
+
+	&--hero
+		background-color: #2a1647
+
+	&--form
+		font-size: 22px !important
+		padding: 0
+		letter-spacing: 0
+		width: 100%
+
+

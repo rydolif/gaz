@@ -1,0 +1,43 @@
+@import "../libs/bootstrap/bootstrap-grid-flex.min"
+@import "../libs/bootstrap/bootstrap-reboot.min"
+@import "../libs/fontawesome/fontawesome-all.min"
+// @import "../libs/fancybox/jquery.fancybox"
+@import "../libs/slick/slick"
+// @import "../libs/swiper/swiper.min"
+// @import "../libs/animation/animate.min"
+
+
+//---------------------------------------------------
+
+.slick-arrow
+	position: absolute
+	top: auto
+	bottom: 200px
+	z-index: 1
+	background: none
+	border: none
+	color: transparent
+	cursor: pointer
+	transition: all .6s
+
+	&::before
+		content: url(../img/arrow.png)
+		position: absolute
+		transition: all .6s
+
+.slick-prev
+	left: 0
+
+	&::before
+		transform: rotate(180deg)
+
+	&:hover,
+	&:focus
+		left: -10px
+
+.slick-next
+	right: 0
+
+	&:hover,
+	&:focus
+		right: -10px

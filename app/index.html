@@ -10,7 +10,7 @@
 	<link rel="icon" href="img/favicon.ico">
 	<meta name="theme-color" content="#000">
 
-	<link rel="stylesheet" href="css/main.min.css?v=1">
+	<link rel="stylesheet" href="css/main.min.css?v=2">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&amp;subset=cyrillic-ext" rel="stylesheet">
 
 </head>
@@ -67,12 +67,12 @@
 			<h1>Комплексные услуги по газификации</h1>
 
 			<ul class="hero__list">
-				<li>Получение технических условий</li>
-				<li>Пуск газа в газовые приборы</li>
-				<li>Строительство наружных и внутренних сетей газоснабжения</li>
-				<li>Выполнение проектных работ по газоснабжению</li>
-				<li>Осуществление строительного контроля</li>
-				<li>Пуско-наладочные работы</li>
+				<li><img src="img/hero1.png" alt=""> Получение технических условий</li>
+				<li><img src="img/hero2.png" alt=""> Пуск газа в газовые приборы</li>
+				<li><img src="img/hero3.png" alt=""> Строительство наружных и внутренних сетей газоснабжения</li>
+				<li><img src="img/hero4.png" alt=""> Выполнение проектных работ по газоснабжению</li>
+				<li><img src="img/hero5.png" alt=""> Осуществление строительного контроля</li>
+				<li><img src="img/hero6.png" alt=""> Пуско-наладочные работы</li>
 			</ul>
 
 			<div class="hero__btn">
@@ -86,6 +86,8 @@
 		<div class="container">
 			
 			<h2>О компании</h2>
+
+			<img src="img/about1.jpg" alt="">
 
 			<p>
 				Наша организация – команда профессионалов в области газификации промышленных зданий, населённых пунктов и частных загородных домов. В штате ООО «НГПС Групп» только квалифицированные и опытные специалисты, имеющие <b>профессиональную аттестацию</b>.
@@ -196,7 +198,7 @@
 		</div>
 	</section>
 
-	<section class="calculation section">
+	<section class="calculation section" id="gasification">
 		<div class="container">
 			<div class="row">
 				
@@ -208,17 +210,38 @@
 
 						<div class="">
 							<label>1. Выберите тип газифицируемого объекта:</label>
-							<input type="text" name="sity" placeholder="Котеджный поселок" required>
+							<select name="sity">
+								<option value="Коттеджный поселок">Коттеджный поселок</option>
+								<option value="Производственный объект">Производственный объект</option>
+								<option value="Склад">Склад</option>
+								<option value="Кафе / Ресторан / Магазин">Кафе / Ресторан / Магазин</option>
+								<option value="Котельная">Котельная</option>
+								<option value="Завод">Завод</option>
+								<option value="Другое">Другое</option>
+							</select>
 						</div>
 
 						<div class="">
 							<label>2. Выберите назначение:</label>
-							<input type="text" name="position" placeholder="Отопление" required>
+							<select name="position">
+								<option value="Отопление">Отопление</option>
+								<option value="Технологические нужды">Технологические нужды</option>
+								<option value="Отопление + технологические нужды">Отопление + технологические нужды</option>
+								<option value="Приготовление пищи">Приготовление пищи</option>
+								<option value="Отопление + приготовление пищи">Отопление + приготовление пищи</option>
+								<option value="Другое">Другое</option>
+							</select>
 						</div>
 
 						<div class="">
 							<label>3. Мощность устанавливаемого оборудования:</label>
-							<input type="text" name="power" placeholder="От 500 до 2000 кВТ" required>
+							<select name="power">
+								<option value="до 100 кВт">до 100 кВт</option>
+								<option value="от 100 до 500 кВт">от 100 до 500 кВт</option>
+								<option value="от 500 до 2000 кВт">от 500 до 2000 кВт</option>
+								<option value="более 2000 кВт">более 2000 кВт</option>
+								<option value="Нужна консультация">Нужна консультация</option>
+							</select>
 						</div>
 
 						<div class="">
@@ -268,28 +291,28 @@
 
 			<ul class="stage__list">
 				<li>
-					<div class="stage__list_number">1</div>
+					<a href="#one" class="stage__list_number">1</a>
 					<b>Подготовка <br>документации</b>
 				</li>
 				<li>
-					<div class="stage__list_number">2</div>
+					<a href="#two" class="stage__list_number">2</a>
 					<b>Проектирование</b>
 				</li>
 				<li>
-					<div class="stage__list_number">3</div>
+					<a href="#three" class="stage__list_number">3</a>
 					<b>Монтаж</b>
 				</li>
 				<li>
-					<div class="stage__list_number">4</div>
+					<a href="#four" class="stage__list_number">4</a>
 					<b>Пуск газа</b>
 				</li>
 				<li>
-					<div class="stage__list_number">5</div>
+					<a href="#five" class="stage__list_number">5</a>
 					<b>Обслуживание</b>
 				</li>
 			</ul>
 
-			<div class="stage__content">
+			<div class="stage__content" id="one">
 				<img src="img/step-content.png" alt="" class="stage__content_img">
 				<div>
 					<h3>Поможем получить всю документацию, необходимую <br>для начала процесса газификации:</h3>
@@ -298,7 +321,55 @@
 						<li>Расчет потребности в топливе</li>
 						<li>Техническая возможность</li>
 					</ul>
-					<a href="#"><img src="img/file.png" alt=""> Какие документы требуются от Вас?</a>
+					<a href="#" class="document_open"><img src="img/file.png" alt=""> Какие документы требуются от Вас?</a>
+				</div>
+			</div>
+
+			<div class="stage__content" id="two">
+				<img src="img/step-content.png" alt="" class="stage__content_img">
+				<div>
+					<h3>Подготовим и согласуем необходимую проектную документацию в минимальные сроки</h3>
+					<ul>
+						<li>2 ГИПа и 8 проектировщиков в штате компании</li>
+						<li>Все проектировщики имеют аттестацию в Ростехнадзоре</li>
+						<li>За 8 лет разработано более 100 проектных решений</li>
+						<li>При необходимости выполняем топографическую съемку</li>
+					</ul>
+					<a href="#" class="montag_open"><img src="img/file.png" alt="">Рассчитайте стоимость монтажа по готовому проекту</a>
+				</div>
+			</div>
+
+			<div class="stage__content" id="three">
+				<img src="img/step-content.png" alt="" class="stage__content_img">
+				<div>
+					<h3>Обеспечим высокое качество монтажа даже в самых сложных проектах</h3>
+					<ul>
+						<li>Все объекты сдаем инспекторам ГРО с 1 раза</li>
+						<li>Каждый специалист имеет необходимые лицензии и сертификаты</li>
+						<li>Внутренний контроль качества на каждом этапе монтажа</li>
+						<li>Строгое соблюдение технологии</li>
+						<li>Собственный парк техники для выполнения любого проекта</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="stage__content" id="four">
+				<img src="img/step-content.png" alt="" class="stage__content_img">
+				<div>
+					<h3>Обеспечим прохождение пуска газа в систему в штатном режиме без лишних доплат и задержек</h3>
+					<ul>
+						<li>Максимально быстро пройдем все инстанции для пуска газа</li>
+						<li>Сформируем и подадим пакеты документов по требуемым формам</li>
+						<li>Гарантированно снимем любые вопросы сотрудников ГРО на месте</li>
+						<li>Поможем избежать дополнительных издержек</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="stage__content" id="five">
+				<img src="img/step-content.png" alt="" class="stage__content_img">
+				<div>
+					<h3>Увеличим срок эксплуатации систем газоснабжения и повысим их КПД за счет профессионального и своевременного обслуживания</h3>
 				</div>
 			</div>
 
@@ -363,7 +434,7 @@
 						</li>
 					</ul>
 
-					<img src="img/about-bg.png" alt="">
+					<img src="img/slider1.jpg" alt="">
 				</div>
 
 				<div class="slider__slick">
@@ -412,7 +483,7 @@
 						</li>
 					</ul>
 
-					<img src="img/about-bg.png" alt="">
+					<img src="img/slider1.jpg" alt="">
 				</div>
 
 			</div>
@@ -437,7 +508,7 @@
 				<div class="step__item step__item--right">
 					<p>
 						<b>1. Оставить </b> <br>
-						<a href="#" class="red">заявку на нашем сайте</a>
+						<a href="#" class="red order_open">Заявку на нашем сайте</a>
 					</p>
 					<p>
 						<b>2. Подробная консультация от нашего специалиста </b>
@@ -451,13 +522,13 @@
 						<b>4. Уточняем условия в местном филиале газораспределительной организации</b>
 						<span> (при необходимости)</span>
 					</p>
-				</div>
-
-				<div class="step__item">
 					<p>
 						<b>5. Подготавливаем подробное технико-коммерческое предложение</b>
 						<span> с указанием стоимости и сроков</span>
 					</p>
+				</div>
+
+				<div class="step__item">
 					<p>
 						<b>6. Заключить Договор</b>
 						<span>или несколько Договоров на различные этапы работ</span>
@@ -469,9 +540,6 @@
 					<p>
 						<b>8. Изготавливаем проектную и рабочую документации</b>
 					</p>
-				</div>
-
-				<div class="step__item step__item--bottom">
 					<p>
 						<b>9. Утверждаем документацию, </b>
 						<span> проходим необходимые согласования и экспертизы</span>
@@ -480,6 +548,9 @@
 						<b>10.  Начинаем строительство</b>
 						<span> газопровода</span>
 					</p>
+				</div>
+
+				<div class="step__item step__item--bottom">
 					<p>
 						<b>11. Вы обеспечиваете необходимые условия для строительства </b>
 						<span>и технический надзор</span>
@@ -490,35 +561,6 @@
 					<p>
 						<b>13. Подготавливаем исполнительно-техническую документацию</b>
 					</p>
-				</div>
-
-				<div class="step__item step__item--off step__item--close step__item--last">
-					<p>
-						<b>21. Оказываем гарантийное и сервисное обслуживание</b>
-					</p>
-					<p>
-						<b>22. Вы ежемесячно экономите на отоплении</b>
-					</p>
-					<p>
-						<b>23. Оказываем консультации</b>
-						<span>и отвечаем на вопросы, возникающие при эксплуатации</span>
-					</p>
-				</div>
-
-				<div class="step__item step__item--left step__item--close">
-					<p>
-						<b>18. Вы заключаете необходимые договоры на врезку и поставку природного газа</b>
-					</p>
-					<p>
-						<b>19. Газораспределительная организация осуществляет врезку ми пуск газа</b>
-						<span>в построенный газопровод</span>
-					</p>
-					<p>
-						<b>20. Заключаем договора на обслуживание газоиспользующего оборудования</b>
-					</p>
-				</div>
-
-				<div class="step__item step__item--left step__item--close">
 					<p>
 						<b>14. Проводим испытания </b>
 						<span>построенной системы газоснабжения</span>
@@ -535,6 +577,37 @@
 						<b>17. Подписание комиссией Акта приёмки</b>
 						<span> законченного строительством объекта газоснабжения</span>
 					</p>
+				</div>
+
+				<div class="step__item step__item--left step__item--close  step__item--last">
+					<p>
+						<b>22. Вы ежемесячно экономите на отоплении</b>
+					</p>
+					<p>
+						<b>23. Оказываем консультации</b>
+						<span>и отвечаем на вопросы, возникающие при эксплуатации</span>
+					</p>
+				</div>
+
+				<div class="step__item step__item--left  step__item--close">
+					<p>
+						<b>20. Заключаем договора на обслуживание газоиспользующего оборудования</b>
+					</p>
+					<p>
+						<b>21. Оказываем гарантийное и сервисное обслуживание</b>
+					</p>
+
+				</div>
+
+				<div class="step__item step__item--left step__item--close">
+					<p>
+						<b>18. Вы заключаете необходимые договоры на врезку и поставку природного газа</b>
+					</p>
+					<p>
+						<b>19. Газораспределительная организация осуществляет врезку ми пуск газа</b>
+						<span>в построенный газопровод</span>
+					</p>
+
 				</div>
 
 				<div class="step__item step__item--left step__item--open">
@@ -722,7 +795,6 @@
 		<p>
 			Lorem ipsum dolor <br>sit amet
 		</p>
-
 	</footer>
 
 	<!-- modal -->
@@ -772,17 +844,38 @@
 
 				<div class="">
 					<label>1. Выберите тип газифицируемого объекта:</label>
-					<input type="text" name="sity" placeholder="Котеджный поселок" required>
+					<select name="sity" required>
+						<option value="Коттеджный поселок">Коттеджный поселок</option>
+						<option value="Производственный объект">Производственный объект</option>
+						<option value="Склад">Склад</option>
+						<option value="Кафе / Ресторан / Магазин">Кафе / Ресторан / Магазин</option>
+						<option value="Котельная">Котельная</option>
+						<option value="Завод">Завод</option>
+						<option value="Другое">Другое</option>
+					</select>
 				</div>
 
 				<div class="">
 					<label>2. Выберите назначение:</label>
-					<input type="text" name="position" placeholder="Отопление" required>
+					<select name="position" required>
+						<option value="Отопление">Отопление</option>
+						<option value="Технологические нужды">Технологические нужды</option>
+						<option value="Отопление + технологические нужды">Отопление + технологические нужды</option>
+						<option value="Приготовление пищи">Приготовление пищи</option>
+						<option value="Отопление + приготовление пищи">Отопление + приготовление пищи</option>
+						<option value="Другое">Другое</option>
+					</select>
 				</div>
 
 				<div class="">
 					<label>3. Мощность устанавливаемого оборудования:</label>
-					<input type="text" name="power" placeholder="От 500 до 2000 кВТ" required>
+					<select name="power" required>
+						<option value="до 100 кВт">до 100 кВт</option>
+						<option value="от 100 до 500 кВт">от 100 до 500 кВт</option>
+						<option value="от 500 до 2000 кВт">от 500 до 2000 кВт</option>
+						<option value="более 2000 кВт">более 2000 кВт</option>
+						<option value="Нужна консультация">Нужна консультация</option>
+					</select>
 				</div>
 
 				<div class="">
@@ -802,6 +895,72 @@
 			</form>
 		</div>
 
+		<div class="modal" id="document">
+			<form action="sendmail.php" class="form" method="post">
+
+				<button class="close document_close" type="button">
+					<span></span>
+					<span></span>
+				</button>
+
+				<h3>Получить полный список документов, требуемый для начала процесса газификации</h3>
+				<input type="hidden" name="subject" value="Получить полный список документов, требуемый для начала процесса газификации">
+
+				<div class="">
+					<label>Введите Вашe Имя:</label>
+					<input type="text" name="name" placeholder="Имя" required>
+				</div>
+
+				<div class="">
+					<label>Введите Ваш телефон:</label>
+					<input type="tel" name="phone" placeholder="+_(___)___-__-__" required>
+				</div>
+
+				<div class="">
+					<button type="submit" class="btn btn--form" name="submit">Отправить</button>
+				</div>
+
+				<div class="form__true">
+					<input type="checkbox" id="true-modal" required checked>
+					<label for="true-modal">Я принимаю условия <a href="#" target="_blank">передачи информации</a></label>
+				</div>
+
+			</form>
+		</div>
+
+		<div class="modal" id="montag">
+			<form action="sendmail.php" class="form" method="post">
+
+				<button class="close montag_close" type="button">
+					<span></span>
+					<span></span>
+				</button>
+
+				<h3>Рассчитаем стоимость монтажа по готовому проекту</h3>
+				<input type="hidden" name="subject" value="Рассчитаем стоимость монтажа по готовому проекту">
+
+				<div class="">
+					<label>Введите Вашe Имя:</label>
+					<input type="text" name="name" placeholder="Имя" required>
+				</div>
+
+				<div class="">
+					<label>Введите Ваш телефон:</label>
+					<input type="tel" name="phone" placeholder="+_(___)___-__-__" required>
+				</div>
+
+				<div class="">
+					<button type="submit" class="btn btn--form" name="submit">Отправить</button>
+				</div>
+
+				<div class="form__true">
+					<input type="checkbox" id="true-modal" required checked>
+					<label for="true-modal">Я принимаю условия <a href="#" target="_blank">передачи информации</a></label>
+				</div>
+
+			</form>
+		</div>
+
 		<div class="modal modal--thanks" id="thanks">
 			<button class="close thanks_close" type="button">
 				<span></span>
@@ -816,7 +975,7 @@
 
     <script>
       function initMap() {
-        var uluru = {lat: 55.6261295, lng: 37.6639371};
+        var uluru = {lat: 55.626155, lng: 37.6660344};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 16,
           center: uluru,

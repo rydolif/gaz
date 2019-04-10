@@ -214,6 +214,8 @@
 		p, ul
 			margin-bottom: 15px
 
+		// img
+		// 	height: 300px
 
 	.contacts__block
 		width: 40%
@@ -255,7 +257,6 @@
 		&__list li
 			width: 100%
 			font-size: 16px
-			text-align: center
 			margin-bottom: 15px
 
 	.work
@@ -352,9 +353,10 @@
 		font-size: 28px
 		margin-bottom: 20px
 
-	input
+	input, select, option
 		height: 50px
 		font-size: 14px
+		padding: 0 10px
 
 		&::placeholder
 			line-height: 50px
@@ -371,6 +373,9 @@
 
 		&:-moz-placeholder /* Firefox 18- */
 			line-height: 50px
+
+	select, option
+		line-height: 50px
 
 	.header__logo
 		p
@@ -478,6 +483,10 @@
 			font-size: 14px
 	
 	.step
+		
+		.btn
+			font-size: 13px !important
+			padding: 0 2px
 
 		&__sub-title
 			font-size: 14px

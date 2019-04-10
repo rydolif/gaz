@@ -5458,6 +5458,19 @@ S:{pattern:/[a-zA-Z]/}}};a.jMaskGlobals=a.jMaskGlobals||{};h=a.jMaskGlobals=a.ex
 
 $(function() {
 
+//-----------------------------stage-tabs--------------------------
+$('.stage__content').hide();
+$('.stage__content:first').show();
+$('.stage__list a:first').addClass('active');
+ $('.stage__list a').click(function(event){
+  event.preventDefault();
+  $('.stage__list a').removeClass('active');
+  $(this).addClass('active');
+  $('.stage__content').hide();
+   var selectTab = $(this).attr('href');
+  $(selectTab).fadeIn();
+});
+
 //------------------------------slider-----------------------------
   $('.slider__container').slick();
 
@@ -5521,19 +5534,16 @@ $(function() {
       },
       messages: {
         name: "Введите Ваше Имя",
-        sity: "Введите Котеджный поселок",
-        position: "Выберите назначение",
-        power: "Введите Мощность оборудования",
         phone: "Введите Ваш телефон",
         circs: "Примите условия",
       },
       submitHandler: function(form) {
         var t = {
           name: jQuery('.form-' + index).find("input[name=name]").val(),
-          sity: jQuery('.form-' + index).find("input[name=sity]").val(),
           phone: jQuery('.form-' + index).find("input[name=phone]").val(),
-          position: jQuery('.form-' + index).find("input[name=position]").val(),
-          power: jQuery('.form-' + index).find("input[name=power]").val(),
+          sity: jQuery('.form-' + index).find("select[name=sity]").val(),
+          position: jQuery('.form-' + index).find("select[name=position]").val(),
+          power: jQuery('.form-' + index).find("select[name=power]").val(),
           subject: jQuery('.form-' + index).find("input[name=subject]").val()
         };
         ajaxSend('.form-' + index, t);
